@@ -1,0 +1,129 @@
+/* 
+
+    Theme Name: IkanPakUs
+    Theme URI: https://github.com/IkanPakUs/ikanpakus-wp-theme
+    Author: IkanPakUs
+    Author URI: https://ikanpakus.github.io
+    Description: Ikanpakus first theme
+    Version: 1.0
+    Text Domain: ikanpakus
+
+*/
+
+*, body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Container Style */
+
+#ikp-main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Style */
+
+#ikp-navbar {
+    width: 100%;
+    padding: 0 10rem;
+    box-sizing: border-box;
+    border-bottom: .5px solid #d3d3d3;
+    position: relative;
+}
+
+.ikp-navbar__content {
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ikp-content__logo {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ikp-content__logo a,
+.ikp-content__logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.ikp-content__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ikp-content__menu > li {
+    list-style: none;
+    flex: 1 1 auto;
+    width: 80px;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.ikp-content__menu li a {
+    color: unset;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ikp-content__menu li .sub-menu {
+    position: absolute;
+    left: 0;
+    display: none;
+    left: 0%;
+    padding: 20px 10px;
+    top: calc(100% + 2px);
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    border-radius: 10px;
+    border: 1px solid #a5a5a5;
+    border-top: none;
+    min-width: 180px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.ikp-content__menu li .sub-menu.show {
+    display: flex;
+}
+
+.ikp-content__menu li .sub-menu li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* Main Content Style */
+
+#ikp-main-content {
+    flex-grow: 1;
+    padding: 5rem 10rem;
+}
+
+/* Footer Style */
+
+#ikp-footer {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+}
+
+.ikp-footer__buttom-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
